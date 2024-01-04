@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    {% for post in main_posts %}
+
+    <h1>{{ post.title }}</h1>
+    <p>by {{ post.name }} on {{ post.date_posted  }}</p>
+    <p> {{ post.content }}</p>
+
+    {% endfor %}
+
+{% endblock %}
+
